@@ -1,5 +1,8 @@
 import { lazy } from "react";
 const Transactions = lazy(() => import("../component/Transactions"));
+const TransactionDetailed = lazy(() =>
+  import("../component/TransactionDetailed")
+);
 const Dashboard = lazy(() => import("../component/Dashboard"));
 const Insight = lazy(() => import("../component/Insight"));
 const Reports = lazy(() => import("../component/Reports"));
@@ -10,6 +13,11 @@ export const Data = [
     id: 1,
     path: "/transactions",
     component: Transactions,
+  },
+  {
+    id: 11,
+    path: "/transaction-details/:id",
+    component: TransactionDetailed,
   },
   {
     id: 2,
