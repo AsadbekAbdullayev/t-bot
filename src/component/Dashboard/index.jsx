@@ -338,10 +338,12 @@ const Dashboard = () => {
   }, [chartData.selection]);
   return (
     <div className="w-full h-full flex flex-col gap-[30px] pr-[25px] pb-[25px]">
-      <p className="text-[#1d1f24] text-[24px] font-[700] ">Dashboard</p>
-      <p className="text-[#71717A] text-[14px] font-[400] mt-[5px] mb-[20px]">
-        Main Info
-      </p>
+      <div>
+        <p className="text-[#1d1f24] text-[24px] font-[700] ">Dashboard</p>
+        <p className="text-[#71717A] text-[14px] font-[400] mt-[5px]">
+          Main Info
+        </p>
+      </div>
       <div
         className="w-full min-h-[500px] rounded-[16px] p-[16px] "
         style={{

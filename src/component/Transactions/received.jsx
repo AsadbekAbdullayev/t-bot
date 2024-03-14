@@ -79,7 +79,7 @@ const ReceivedCoin = () => {
   const [data, setData] = useState([]);
   const getAll = async () => {
     try {
-      const res = await request.get("manager/send-transaction");
+      const res = await request.get("manager/send-transaction/");
       const newRes = res?.data?.data;
       setData(newRes);
       console.log(res, "res");
